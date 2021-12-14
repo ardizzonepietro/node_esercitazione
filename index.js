@@ -15,3 +15,8 @@ apiServer.get("/nome", (request, response)=>{
     console.log("enter get")
     response.send("<h1>ciao pietro!</h1>")
 })
+apiServer.get("/mioNome", (request, response)=>{
+    console.log("name: "+request.query.name)
+    var nome = request.query.name;
+    response.send("<h1>ciao "+nome+"</h1>");
+})
