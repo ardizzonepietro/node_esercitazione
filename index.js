@@ -11,3 +11,7 @@ apiServer.get("/", (request, response)=>{
     console.log("enter get")
     response.send("<h1>ciao client!</h1>")
 })
+apiServer.get("/nome", (request, response)=>{
+    console.log("enter get")
+    response.send("<h1>ciao pietro!</h1>")
+})
