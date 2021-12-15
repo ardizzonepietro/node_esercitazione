@@ -16,7 +16,12 @@ apiServer.get("/nome", (request, response)=>{
     response.send("<h1>ciao pietro!</h1>")
 })
 apiServer.get("/mioNome", (request, response)=>{
-    console.log("name: "+request.query.str)
+    
     var str = request.query.str;
     response.send("<h1>a tua stringa:  "+str+"</h1>");
+})
+apiServer.get("/plus", (request, response)=>{
+    var a = parseInt(request.query.a);
+    var b = parseInt(request.query.b)
+    response.send("<h1>result:  "+(a+b)+"</h1>");
 })
